@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Security and Trust">
+  <title>Security and Trust</title>
+  <g fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- shield -->
+    <path d="M32 6l14 6v12c0 12-8 20-14 22-6-2-14-10-14-22V12z"/>
+    <!-- lock body -->
+    <rect x="24" y="26" width="16" height="14" rx="2"/>
+    <!-- shackle -->
+    <path d="M28 26v-3a4 4 0 0 1 8 0v3" stroke="#FF5722"/>
+    <!-- keyhole -->
+    <circle cx="32" cy="34" r="1.8" fill="#FF5722"/>
+  </g>
+</svg>
