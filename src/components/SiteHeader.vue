@@ -10,8 +10,10 @@
           <span class="hamburger__line hamburger__line--bot"></span>
         </span>
       </button>
-      <p>Zermatt</p>
-      <span style="font-weight:400">theme.</span>
+      <div class="logo-text">
+        <p>Zermatt</p>
+        <span style="font-weight:400">theme</span>
+      </div>
     </div>
     <nav class="nav">
       <a href="#">Home</a>
