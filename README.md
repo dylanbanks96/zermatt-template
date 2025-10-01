@@ -4,7 +4,7 @@ This is a simple landing page demo template. Built using Vue JS v3, composition 
 
 Nothing fancy - just a bit of css and some JS. Good starting point for a full app.
 
-Free to use if you wish, or [buy me a coffee](buymeacoffee.com/dylanbanks) ;)
+Free to use if you wish, or [buy me a coffee](https://buymeacoffee.com/dylanbanks) ;)
 
 
 
