@@ -1,13 +1,12 @@
 <template>
   <header class="container header">
-
-    <div class="logo">
-      <button class="nav-toggle" :class="pulsing ? 'pulsing' : ''" @click="toggleMenu" aria-label="toggle navigation"
-        aria-expanded="false" id="hamburgerBtn">
-        <span class="hamburger__box" aria-hidden="true">
-          <span class="hamburger__line hamburger__line--top"></span>
-          <span class="hamburger__line hamburger__line--mid"></span>
-          <span class="hamburger__line hamburger__line--bot"></span>
+    <div class="header__brand">
+      <button class="header__toggle" :class="pulsing ? 'pulsing' : ''" @click="toggleMenu"
+        aria-label="toggle navigation" aria-expanded="false" id="hamburgerBtn">
+        <span class="header__burger" aria-hidden="true">
+          <span class="header__burger-line header__burger-line--top"></span>
+          <span class="header__burger-line header__burger-line--mid"></span>
+          <span class="header__burger-line header__burger-line--bot"></span>
         </span>
       </button>
       <div class="logo-text">
@@ -15,22 +14,22 @@
         <span style="font-weight:400">theme</span>
       </div>
     </div>
-    <nav class="nav">
-      <a href="#">Home</a>
-      <a href="#services">Services</a>
-      <a href="#values">Values</a>
-      <a href="#testimonials">Testimonials</a>
+    <nav class="header__links">
+      <a class="header__link" href="#">Home</a>
+      <a class="header__link" href="#services">Services</a>
+      <a class="header__link" href="#values">Values</a>
+      <a class="header__link" href="#testimonials">Testimonials</a>
     </nav>
-    <button class="nav-btn cta-dark"><a href="#">Contact Us</a></button>
+    <button class="header__cta"><a href="#">Contact Us</a></button>
+    <template v-if="isMenuOpen">
+      <div class="header__small">
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#values">Values</a>
+        <a href="#testimonials">Testimonials</a>
+      </div>
+    </template>
   </header>
-  <template v-if="isMenuOpen">
-    <div class="nav-mobile-links">
-      <a href="#">Home</a>
-      <a href="#services">Services</a>
-      <a href="#values">Values</a>
-      <a href="#testimonials">Testimonials</a>
-    </div>
-  </template>
 </template>
 
 <script setup>
@@ -41,7 +40,7 @@ const pulsing = ref(false);
 
 function toggleMenu() {
   isMenuOpen.value = !isMenuOpen.value;
-  const btn = document.getElementsByClassName('nav-toggle')[0];
+  const btn = document.getElementsByClassName('header__toggle')[0];
   pulsing.value = true;
   btn.offsetWidth;
   setTimeout(() => {
