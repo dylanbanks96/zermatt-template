@@ -1,5 +1,5 @@
 <template>
-  <header class="container header">
+  <header class="header">
     <div class="header__brand">
       <button class="header__toggle" :class="pulsing ? 'pulsing' : ''" @click="toggleMenu"
         aria-label="toggle navigation" aria-expanded="false" id="hamburgerBtn">
@@ -9,9 +9,9 @@
           <span class="header__burger-line header__burger-line--bot"></span>
         </span>
       </button>
-      <div class="logo-text">
+      <div class="header__logo">
         <p>Zermatt</p>
-        <span style="font-weight:400">theme</span>
+        <span>theme</span>
       </div>
     </div>
     <nav class="header__links">

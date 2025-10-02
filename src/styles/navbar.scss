@@ -24,6 +24,17 @@
     font-size: 20px
   }
 
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+
+    & span {
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+
   &__toggle {
     display: none;
 
